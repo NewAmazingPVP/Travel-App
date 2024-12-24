@@ -10,7 +10,7 @@ const capitalCity = document.getElementById("capitalCity");
 let clickedMarker = null;
 
 map.on("click", async (e) => {
-    const { lat, lng } = e.latlng;
+    const {lat, lng} = e.latlng;
 
     if (clickedMarker) {
         map.removeLayer(clickedMarker);
