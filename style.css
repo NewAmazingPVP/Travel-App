@@ -1,0 +1,42 @@
+body {
+    font-family: sans-serif;
+    margin: 20px;
+    max-width: 800px;
+}
+
+#map {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 20px;
+}
+
+#selection-info {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.link-boxes {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.subpage-link {
+    flex: 1;
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: 10px;
+}
+
+.subpage-link a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+#headerZone {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+}
