@@ -36,7 +36,7 @@ if (!pickedCapital || pickedCapital === "Unknown") {
             const visM = data.visibility;
             const visKm = visM / 1000;
             const visMiles = visM / 1609.34;
-            
+
             let windDir = "";
             if (windAngle > 337.5 || windAngle <= 22.5) {
                 windDir = "N";
@@ -55,7 +55,7 @@ if (!pickedCapital || pickedCapital === "Unknown") {
             } else {
                 windDir = "NW";
             }
-            
+
             weatherBox.innerHTML = `
         <strong>Weather:</strong> ${weatherDesc}<br>
         <strong>Temperature:</strong> ${cTemp.toFixed(2)}°C / ${fTemp.toFixed(
