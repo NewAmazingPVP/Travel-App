@@ -1,1 +1,33 @@
-
+body{
+  font-family:"Ubuntu", sans-serif;
+  background: linear-gradient(to bottom, #0f6b30, #fff);
+  color: #333;
+  margin:0;
+  padding:0;
+}/*end of body css*/
+header{
+  background-color:#e32119;
+  color:#fff;
+  text-align:center;
+  padding:20px 0;
+}/*end of header css*/
+main{
+  padding:20px;
+  border:1px solid #ccc;
+  border-radius:8px;
+  background-color:#f4f4f4;
+}/*end of main css*/
+h1, h2{
+  color:0f6b30;
+}/*end of header tags*/
+img{
+  max-width:100%;
+  height:auto;
+  border-radius:8px;
+}/*end of image css*/
+footer{
+  background-colot:#333;
+  color:#fff;
+  text-align:center;
+  padding:10px 0;
+}
