@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Map</title>
     <link
             href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
@@ -10,28 +11,24 @@
     <link href="style.css" rel="stylesheet"/>
 </head>
 <body>
-<h1>Pick A Country</h1>
-<p>Click anywhere on the map to select a country</p>
-
-<div id="map"></div>
-
-<div id="selection-info">
-    <h2>Selected Country</h2>
-    <p id="countryName">No country selected</p>
-    <p id="capitalCity"></p>
-    <p>Visit the subpages below for more details</p>
-</div>
-
-<div class="link-boxes">
-    <div class="subpage-link">
-        <a href="country.html">View Country Details</a>
+    <div id="main-container">
+        <div id="headerZone">Interactive World Map</div>
+        <div id="map"></div>
+        <div id="selection-info">
+            <h2>Selected Country</h2>
+            <p id="countryName">No country selected</p>
+            <p id="capitalCity"></p>
+        </div>
+        <div class="link-boxes">
+            <div class="subpage-link">
+                <a href="country.html">View Country Details</a>
+            </div>
+            <div class="subpage-link">
+                <a href="weather.html">View Weather Details</a>
+            </div>
+        </div>
     </div>
-    <div class="subpage-link">
-        <a href="weather.html">View Weather Details</a>
-    </div>
-</div>
-
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-<script src="map.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="map.js"></script>
 </body>
 </html>
