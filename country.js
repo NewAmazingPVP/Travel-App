@@ -4,7 +4,7 @@ const countryBox = document.getElementById("countryBox");
 const chosenCountry = localStorage.getItem("chosenCountry");
 const pickedCapital = localStorage.getItem("pickedCapital");
 
-if (chosenCountry) {
+if (chosenCountry || countryBox) {
     country.textContent = chosenCountry;
     capital.textContent = pickedCapital;
 
