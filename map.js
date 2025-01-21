@@ -58,7 +58,7 @@ const geoJsonLayer = L.geoJSON(null, {
     }
 }).addTo(map);
 
-fetch("https://cors-anywhere.herokuapp.com/https://geojson-maps.ash.ms/world-110m.geojson")
+fetch("https://raw.githubusercontent.com/johan/world.geo.json/master/countries.geo.json")
     .then((response) => response.json())
     .then((data) => {
         geoJsonLayer.addData(data);
