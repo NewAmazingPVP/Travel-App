@@ -1,6 +1,6 @@
 body {
-    margin: 0;
-    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    margin: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -33,6 +33,7 @@ body {
     box-shadow: 0 2px 4px rgb(0 0 0 / 12%);
     width: 100%;
     margin: 0;
+    font-size: 25px;
 }
 
 .link-boxes {
@@ -67,13 +68,14 @@ body {
 #headerZone {
     font-size: 1.5rem;
     font-weight: bold;
-    padding: 10px;
+    padding: 20px;
     background-color: #6990ad;
     color: #ffffff;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     width: 100%;
     text-align: center;
+    font-size: 40px;
 }
 
 @media (max-width: 768px) {
