@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8"/>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Country Details</title>
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body class="country-details">
     <header>
@@ -15,10 +16,12 @@
                 <p><strong>Country:</strong> <span id="country"></span></p>
                 <p><strong>Capital City:</strong> <span id="capital"></span></p>
             </div>
+            <div id="countryBox">
+                <p>Loading country data...</p>
+            </div>
         </section>
     </main>
     <footer>
-        <div id="countryBox">Loading country data...</div>
         <p><a href="index.html" id="returnLink">Go Back to Map</a></p>
     </footer>
     <script src="country.js"></script>
