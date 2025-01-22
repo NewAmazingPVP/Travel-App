@@ -129,7 +129,7 @@ header h1 {
 }
 
 #headerZone,
-#countryBox {
+#countryBox, #weatherBox {
     width: 100%; 
     background-color: #ffffff;
     padding: 20px;
@@ -169,7 +169,7 @@ header h1 {
     header h1 {
         font-size: 2rem;
     }
-    #detailsHeaderZone, #countryBox {
+    #headerZone, #countryBox, #weatherBox {
         font-size: 1rem;
         padding: 15px;
     }
