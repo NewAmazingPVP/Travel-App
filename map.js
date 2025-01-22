@@ -74,9 +74,13 @@ const customCountryInfo = document.getElementById("customCountryInfo");
 customCountryInfo.addEventListener("click", async (event) => {
     event.preventDefault();
 
-    const chosenCountry = localStorage.getItem("chosenCountry");
+    const chosenCountry = localStorage.getItem("chosenCountry").toLowerCase();
     try {
         const response = await fetch(`${chosenCountry}.html`);
+        if (!response.ok) {
+            alert("No custom info for this country yet sorry!");
+            return;
+        }
         const content = await response.text();
         const newWindow  = window.open("", "_blank");
         newWindow.document.write(content);
