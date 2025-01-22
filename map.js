@@ -1,4 +1,4 @@
-const map = L.map("map", { zoomControl: true }).fitWorld();
+const map = L.map("map", {zoomControl: true}).fitWorld();
 
 L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
     maxZoom: 19
@@ -31,7 +31,7 @@ const geoJsonLayer = L.geoJSON(null, {
         });
 
         layer.on("click", async (e) => {
-            const { name } = feature.properties;
+            const {name} = feature.properties;
 
             if (clickedMarker) {
                 map.removeLayer(clickedMarker);
@@ -82,7 +82,7 @@ customCountryInfo.addEventListener("click", async (event) => {
             return;
         }
         const content = await response.text();
-        const newWindow  = window.open("", "_blank");
+        const newWindow = window.open("", "_blank");
         newWindow.document.write(content);
 
         try {

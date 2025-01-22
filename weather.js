@@ -58,26 +58,16 @@ if (!pickedCapital || pickedCapital === "Unknown") {
 
             weatherBox.innerHTML = `
         <strong>Weather:</strong> ${weatherDesc}<br>
-        <strong>Temperature:</strong> ${cTemp.toFixed(2)}°C / ${fTemp.toFixed(
-                2
-            )}°F<br>
-        <strong>Feels Like:</strong> ${cFeelsLike.toFixed(
-                2
-            )}°C / ${fFeelsLike.toFixed(2)}°F<br>
-        <strong>Min Temperature:</strong> ${cMinTemp.toFixed(
-                2
-            )}°C / ${fMinTemp.toFixed(2)}°F<br>
-        <strong>Max Temperature:</strong> ${cMaxTemp.toFixed(
-                2
-            )}°C / ${fMaxTemp.toFixed(2)}°F<br>
+        <strong>Temperature:</strong> ${cTemp.toFixed(2)}°C / ${fTemp.toFixed(2)}°F<br>
+        <strong>Feels Like:</strong> ${cFeelsLike.toFixed(2)}°C / ${fFeelsLike.toFixed(2)}°F<br>
+        <strong>Min Temperature:</strong> ${cMinTemp.toFixed(2)}°C / ${fMinTemp.toFixed(2)}°F<br>
+        <strong>Max Temperature:</strong> ${cMaxTemp.toFixed(2)}°C / ${fMaxTemp.toFixed(2)}°F<br>
         <strong>Humidity:</strong> ${humidity}%<br>
         <strong>Wind Speed:</strong> ${windSpd} m/s<br>
         <strong>Wind Direction:</strong> ${windDir} (${windAngle}°)<br>
         <strong>Clouds:</strong> ${clouds}%<br>
         <strong>Pressure:</strong> ${pressure} hPa<br>
-        <strong>Visibility:</strong> ${visKm.toFixed(2)} km / ${visMiles.toFixed(
-                2
-            )} miles
+        <strong>Visibility:</strong> ${visKm.toFixed(2)} km / ${visMiles.toFixed(2)} miles
       `;
         })
 }
