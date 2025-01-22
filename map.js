@@ -69,3 +69,27 @@ fetch("https://raw.githubusercontent.com/johan/world.geo.json/master/countries.g
 window.addEventListener("resize", () => {
     map.invalidateSize();
 });
+
+const customCountryInfo = document.getElementById("customCountryInfo");
+customCountryInfo.addEventListener("click", async (event) => {
+    event.preventDefault();
+
+    const chosenCountry = localStorage.getItem("chosenCountry");
+    try {
+        const response = await fetch(`${chosenCountry}.html`);
+        const content = await response.text();
+        const newWindow  = window.open("", "_blank");
+        newWindow.document.write(content);
+
+        try {
+            const cssResponse = await fetch(`${chosenCountry}.css`);
+            const cssContent = await cssResponse.text();
+            const style = window.document.createElement("style");
+            style.innerHTML = cssContent;
+            window.document.head.appendChild(style);
+        } catch (cssError) {
+        }
+
+    } catch (err) {
+    }
+});
