@@ -88,9 +88,9 @@ customCountryInfo.addEventListener("click", async (event) => {
         try {
             const cssResponse = await fetch(`${chosenCountry}.css`);
             const cssContent = await cssResponse.text();
-            const style = window.document.createElement("style");
+            const style = newWindow.document.createElement("style");
             style.innerHTML = cssContent;
-            window.document.head.appendChild(style);
+            newWindow.document.head.appendChild(style);
         } catch (cssError) {
         }
 
