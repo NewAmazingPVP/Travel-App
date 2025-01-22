@@ -8,24 +8,28 @@
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
-    <div id="main-container">
-        <div id="headerZone">Interactive World Map</div>
-        <div id="map"></div>
-        <div id="selection-info">
-            <h2>Selected Country</h2>
-            <p id="countryName">No country selected</p>
-            <p id="capitalCity"></p>
+<div id="main-container">
+    <div id="headerZone">Interactive World Map</div>
+    <div id="map"></div>
+    <div id="selection-info">
+        <h2>Selected Country</h2>
+        <p id="countryName">No country selected</p>
+        <p id="capitalCity"></p>
+    </div>
+    <div class="link-boxes">
+        <div class="subpage-link">
+            <a href="country.html">View Country Details</a>
         </div>
-        <div class="link-boxes">
-            <div class="subpage-link">
-                <a href="country.html">View Country Details</a>
-            </div>
-            <div class="subpage-link">
-                <a href="weather.html">View Weather Details</a>
-            </div>
+        <div class="subpage-link">
+            <a href="#" id="customCountryInfo">Custom Country Info</a>
+        </div>
+        <div class="subpage-link">
+            <a href="weather.html">View Weather Details</a>
         </div>
     </div>
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-    <script src="map.js"></script>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="map.js"></script>
 </body>
 </html>
