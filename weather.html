@@ -1,28 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8"/>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body class="country-details">
     <header>
-<h1>All About Weather</h1>
+        <h1>Weather Details</h1>
     </header>
-<main>
-    <section>
-<div id="headerZone">
-    <p><strong>Country:</strong> <span id="country"></span></p>
-    <p><strong>Capital City:</strong> <span id="capital"></span></p>
-</div>
-    </section>
-</main>
-
-<div id="weatherBox">Loading weather data...</div>
-
-<p><a href="index.html" id="returnLink">Go Back to Map</a></p>
-
-<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-
-<script src="weather.js"></script>
+    <main>
+        <section>
+            <div id="headerZone">
+                <p><strong>Country:</strong> <span id="country"></span></p>
+                <p><strong>Capital City:</strong> <span id="capital"></span></p>
+            </div>
+            <div id="weatherBox">
+                <p>Loading weather data...</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p><a href="index.html" id="returnLink">Go Back to Map</a></p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="weather.js"></script>
 </body>
 </html>
